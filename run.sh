@@ -1,4 +1,6 @@
 pipenv install
 pipenv lock
 pipenv shell
-arduino --verify 
+python3 webhook-client/main.py
+arduino --verify main.ino
+arduino --upload main.ino
