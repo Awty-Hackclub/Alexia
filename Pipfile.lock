@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5bbcfe0ff292265c1699bf45e48f22bce9fa4c3a9cecd09bafac105753d2ec90"
+            "sha256": "984e9f31b6862bcde32eec97c6aad1e0c7c948868656c5bfb70cd81e1c3d6e8f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,13 @@
         ]
     },
     "default": {
+        "arduino": {
+            "hashes": [
+                "sha256:0c4fa1e337015f89d7b110b1a5bd2937e492fa42c55a58912e134f4120a7bd4d"
+            ],
+            "index": "pypi",
+            "version": "==0.0.1"
+        },
         "argparse": {
             "hashes": [
                 "sha256:62b089a55be1d8949cd2bc7e0df0bddb9e028faefc8c32038cc84862aefdd6e4",
