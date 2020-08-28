@@ -6,29 +6,27 @@ import csv
 with open('key.json') as f:
     bot_settings = json.load(f)
 
-with open('data.csv') as c:
-   csvwriter = csv.writer(c)
 
-   csvwriter.writerow()
+configuration = {
+   "key": bot_settings["openweather"],
+   "city": bot_settings["city"] 
+}
 
-   csvwriter.writerows()
+response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={configuration['city']}&appid={configuration['key'}")
 
-key = bot_settings["openweather"]
-
-city = "Houston"
-
-url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}"
-
-response = requests.get(url)
+fields = ['temp', 'humidity', 'pressure', 'weather']
 
 if response.status_code == 200:
-    data = response.json()
-    main = data['main']
-    # temperatureK = main['temp']
-    # temperatureC = temperatureK - 273.15
-    # temperatureF = temperatureC*(9/5) + 32
-    # humidity = main['humidity']
-    # pressure = main['pressure']
-    # report = data['weather']
-else:
-    print("Error in the HTTP request")
+   try: 
+   #    with open('data.csv') as c:
+   #       csvwriter = csv.writer(c)
+   #       csvwriter.writerow(fields)
+
+   #    data = response.json()
+   #    main = data['main']
+   #  # temperatureK = main['temp']
+   #  # humidity = main['humidity']
+   #  # pressure = main['pressure']
+   #  # report = data['weather']
+   except:
+      ...
