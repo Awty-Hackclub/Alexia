@@ -2,19 +2,14 @@ import time
 import requests, json
 
 
-with open('API_KEY.json') as f:
+with open('key.json') as f:
         bot_settings = json.load(f)
 
-API_KEY = bot_settings["openweather"]
+key = bot_settings["openweather"]
 
-# importing requests and json
+city = "Houston"
 
-# base URL
-BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-CITY = "Houston"
-# API key API_KEY = "Your API Key"
-# upadting the URL
-URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY
+URL = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}"
 # HTTP request
 response = requests.get(URL)
 # checking the status code of the request
@@ -33,7 +28,7 @@ if response.status_code == 200:
    pressure = main['pressure']
    # weather report
    report = data['weather']
-   print(f"{CITY:-^30}")
+   print(f"{city}:-^30}")
    print(f"Temperature: {temperatureK} K")
    print(f"Temperature: {round(temperatureC, 2)} C")
    print(f"Temperature: {round(temperatureF, 2)} F")
