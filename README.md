@@ -19,6 +19,19 @@ An IOT clock that shows time and covid-19 count (among other things). (Submissio
 - Youtube Subscriber Count
 - Easy configuration
 
+## Run instructions
+
+1. In the `api-client` directory, create `key.json`
+2. In `key.json`, create this object (the value should be your open weather api key):
+
+```json
+{
+  "openweather": ""
+}
+```
+
+3. Run `./run.sh`
+
 ## Schedule
 
 1. Friday After School
