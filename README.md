@@ -37,6 +37,7 @@ An IOT clock that shows time and covid-19 count (among other things). (Submissio
 ### Sergei and Jose
 
 - API client work and CSV serialization
+- Video Editing + Promotional work
 
 ## Api Data Sources
 
