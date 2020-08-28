@@ -24,7 +24,9 @@ if response.status_code == 200:
    # getting the main dict block
    main = data['main']
    # getting temperature
-   temperature = main['temp']
+   temperatureK = main['temp']
+   temperatureC = temperatureK - 273.15
+   temperatureF = temperatureC*(9/5) + 32
    # getting the humidity
    humidity = main['humidity']
    # getting the pressure
@@ -32,7 +34,9 @@ if response.status_code == 200:
    # weather report
    report = data['weather']
    print(f"{CITY:-^30}")
-   print(f"Temperature: {temperature}")
+   print(f"Temperature: {temperatureK} K")
+   print(f"Temperature: {round(temperatureC, 2)} C")
+   print(f"Temperature: {round(temperatureF, 2)} F")
    print(f"Humidity: {humidity}")
    print(f"Pressure: {pressure}")
    print(f"Weather Report: {report[0]['description']}")
