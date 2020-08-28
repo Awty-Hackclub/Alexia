@@ -37,3 +37,9 @@ An IOT clock that shows time and covid-19 count (among other things). (Submissio
 ### Sergei and Jose
 
 - API client work and CSV serialization
+
+## Api Data Sources
+
+### [Weather](https://openweathermap.org/)
+
+### [Covid Data Count? (unconfirmed; still looking)](https://www.programmableweb.com/api/novelcovid-rest-api-v10)
