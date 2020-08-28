@@ -44,3 +44,5 @@ An IOT clock that shows time and covid-19 count (among other things). (Submissio
 ### [Weather](https://openweathermap.org/)
 
 ### [Covid Data Count? (unconfirmed; still looking)](https://www.programmableweb.com/api/novelcovid-rest-api-v10)
+
+## [Pictures](/pics)
