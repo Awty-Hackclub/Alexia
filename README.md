@@ -33,26 +33,6 @@ An IOT clock that shows time and covid-19 count (among other things). (Submissio
 
 3. Run `./run.sh`
 
-## Schedule
-
-1. Friday After School
-2. Saturday After Lunch
-3. Sunday Afternoon (promotional work)
-
-## Delegation
-
-### Tarek
-
-- Circuit building
-- INO code for arduino
-- Video Editing + Promotional work
-- Assisting other members with building the API client and task scheduling + csv serialization
-
-### Sergei and Jose
-
-- API client work and CSV serialization
-- Video Editing + Promotional work
-
 ## Api Data Sources
 
 ### [Weather](https://openweathermap.org/)
