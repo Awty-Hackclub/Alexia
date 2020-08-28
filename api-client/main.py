@@ -18,15 +18,15 @@ fields = ['temp', 'humidity', 'pressure', 'weather']
 
 if response.status_code == 200:
    try: 
-   #    with open('data.csv') as c:
-   #       csvwriter = csv.writer(c)
-   #       csvwriter.writerow(fields)
+      with open('data.csv') as c:
+         csvwriter = csv.writer(c)
+         csvwriter.writerow(fields)
 
-   #    data = response.json()
-   #    main = data['main']
-   #  # temperatureK = main['temp']
-   #  # humidity = main['humidity']
-   #  # pressure = main['pressure']
-   #  # report = data['weather']
+      data = response.json()
+      main = data['main']
+    # temperatureK = main['temp']
+    # humidity = main['humidity']
+    # pressure = main['pressure']
+    # report = data['weather']
    except:
       ...

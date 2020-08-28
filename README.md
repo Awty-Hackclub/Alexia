@@ -59,4 +59,8 @@ An IOT clock that shows time and covid-19 count (among other things). (Submissio
 
 ### [Covid Data Count? (unconfirmed; still looking)](https://www.programmableweb.com/api/novelcovid-rest-api-v10)
 
+## Hardware 
+
 ## [Pictures](/pics)
+
+## ![The Circuit](https://www.arduino.cc/en/uploads/Tutorial/LCD_Base_bb_Fritz.png)
