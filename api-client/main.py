@@ -6,6 +6,13 @@ import csv
 with open('key.json') as f:
     bot_settings = json.load(f)
 
+with open('data.csv') as c:
+   csvwriter = csv.writer(c)
+
+   csvwriter.writerow()
+
+   csvwriter.writerows()
+
 key = bot_settings["openweather"]
 
 city = "Houston"
