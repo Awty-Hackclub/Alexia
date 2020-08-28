@@ -4,11 +4,11 @@ import json
 import csv
 
 with open('key.json') as f:
-    bot_settings = json.load(f)
+    key = json.load(f)
 
 configuration = {
-    "key": bot_settings["openweather"],
-    "city": bot_settings["city"],
+    "key": key["openweather"],
+    "city": key["city"],
     "filename": "data.csv"
 }
 
