@@ -18,3 +18,9 @@ An IOT clock that shows time and covid-19 count (among other things). (Submissio
 
 - Youtube Subscriber Count
 - Easy configuration
+
+## Schedule
+
+1. Friday After School
+2. Saturday After Lunch
+3. Sunday Afternoon (promotional work)
