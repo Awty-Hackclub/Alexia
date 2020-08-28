@@ -6,7 +6,6 @@ import csv
 with open('key.json') as f:
     bot_settings = json.load(f)
 
-
 configuration = {
     "key": bot_settings["openweather"],
     "city": bot_settings["city"],
@@ -20,7 +19,7 @@ fields = ['temp', 'humidity', 'pressure', 'weather']
 
 if response.status_code == 200:
     try:
-        with open(configuration["filename"]) as c:
+        with open(configuration["filename"], "w+") as c:
             csvwriter = csv.writer(c)
             csvwriter.writerow(fields)
             data = response.json()
