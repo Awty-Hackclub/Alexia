@@ -1,6 +1,10 @@
-from covid.api import CovId19Data
+import requests
 
-api = CovId19Data(force=False)
-res = api.get_stats()
-res = api.filter_by_country("US")
-print(res)
+response = requests.get('https://api.covid19api.com/total/country/united-states')
+data = response.json()
+
+recent = data[-1]
+fields = ['Date', 'Confirmed', 'Deaths', 'Recovered']
+
+for i in fields:
+    print(i, recent[i])
