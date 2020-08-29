@@ -1,10 +1,14 @@
 import requests
 
-response = requests.get('https://api.covid19api.com/total/country/united-states')
-data = response.json()
 
-recent = data[-1]
-fields = ['Date', 'Confirmed', 'Deaths', 'Recovered']
+def count():
+    response = requests.get(
+        'https://api.covid19api.com/total/country/united-states')
+    data = response.json()
 
-for i in fields:
-    print(i, recent[i])
+    recent = data[-1]
+    return {
+        'confirmed': recent['Confirmed'],
+        'deaths': recent['deaths'],
+        'recovered': recent['recovered']
+    }
