@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 ino = "*"
 arduino = "*"
+discord = "*"
 
 [dev-packages]
 
