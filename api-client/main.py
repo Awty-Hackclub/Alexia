@@ -16,9 +16,6 @@ configuration = {
 response = requests.get(
     f"https://api.openweathermap.org/data/2.5/weather?q={configuration['city']}&appid={configuration['key']}")
 
-fields = ['temp', 'humidity', 'pressure',
-          'weather', 'confirmed', 'deaths', 'recovered']
-
 arduino = serial.Serial('/dev/ttyACM0', 9600)
 
 while True:
