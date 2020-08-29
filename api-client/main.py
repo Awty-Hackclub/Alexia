@@ -9,6 +9,7 @@ with open('key.json') as f:
 configuration = {
     "key": key["openweather"],
     "city": key["city"],
+    "country": key["country"],
     "filename": "data.csv"
 }
 
