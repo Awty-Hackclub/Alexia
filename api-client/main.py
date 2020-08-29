@@ -24,12 +24,11 @@ arduino = serial.Serial('/dev/ttyACM0', 9600)
 while True:
     if response.status_code == 200:
         try:
-            with open(configuration["filename"], "w+") as c:
-                covid_data = count(key["country"])
-                data = response.json()
-                main = data['main']
-                data_string = f"{main['temp']},{main['humidity']},{main['pressure']},{main['weather']},{main['confirmed']},{main['deaths']},{main['recovered']}"
-                arduino.write(bytes(data_string))
+            covid_data = count(key["country"])
+            data = response.json()
+            main = data['main']
+            data_string = f"{main['temp']},{main['humidity']},{main['pressure']},{main['weather']},{main['confirmed']},{main['deaths']},{main['recovered']}"
+            arduino.write(bytes(data_string))
         except ValueError as e:
             print(f"Error: {e}")
             break
