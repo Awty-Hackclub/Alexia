@@ -16,7 +16,6 @@ configuration = {
 response = requests.get(
     f"https://api.openweathermap.org/data/2.5/weather?q={configuration['city']}&appid={configuration['key']}")
 
-arduino = serial.Serial('/dev/ttyACM0', 9600)
 
 while True:
     if response.status_code == 200:
@@ -26,8 +25,6 @@ while True:
             main = data['main']
             data_string = f"{main['temp']},{main['humidity']},{main['pressure']},{data['weather']},{covid_data['confirmed']},{covid_data['deaths']},{covid_data['recovered']}"
             print(data_string)
-            arduino.write(data_string.encode())
         except ValueError as e:
             print(f"Error: {e}")
             break
-    time.sleep(600)  # every 10 minutes
