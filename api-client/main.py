@@ -27,7 +27,7 @@ while True:
             covid_data = count(key["country"])
             data = response.json()
             main = data['main']
-            data_string = f"{main['temp']},{main['humidity']},{main['pressure']},{main['weather']},{main['confirmed']},{main['deaths']},{main['recovered']}"
+            data_string = f"{main['temp']},{main['humidity']},{main['pressure']},{main['weather']},{covid_data['confirmed']},{covid_data['deaths']},{covid_data['recovered']}"
             arduino.write(bytes(data_string))
         except ValueError as e:
             print(f"Error: {e}")
