@@ -21,7 +21,6 @@ A discord bot that shows time and covid-19 count (among other things). (Submissi
 {
   "openweather": "",
   "city": "",
-  "country": ""
 }
 ```
 
