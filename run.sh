@@ -1,5 +1,5 @@
 pipenv install
 pipenv lock
-python3 api-client/main.py
-arduino --verify main.ino
-arduino --upload main.ino
+cd api-client
+python3 main.py
+cd ..
