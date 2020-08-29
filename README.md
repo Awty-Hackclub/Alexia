@@ -27,7 +27,8 @@ An IOT clock that shows time and covid-19 count (among other things). (Submissio
 ```json
 {
   "openweather": "",
-  "city": ""
+  "city": "",
+  "country": ""
 }
 ```
 
