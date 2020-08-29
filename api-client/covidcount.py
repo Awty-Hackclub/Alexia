@@ -9,6 +9,6 @@ def count(country):
     recent = data[-1]
     return {
         'confirmed': recent['Confirmed'],
-        'deaths': recent['deaths'],
-        'recovered': recent['recovered']
+        'deaths': recent['Deaths'],
+        'recovered': recent['Recovered']
     }
