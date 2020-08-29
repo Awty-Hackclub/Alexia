@@ -31,4 +31,5 @@ while True:
                 csvwriter.writerows(rows)
         except ValueError as e:
             print(f"Error: {e}")
+            break
     time.sleep(600) # every 10 minutes
