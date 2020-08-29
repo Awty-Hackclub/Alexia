@@ -1,3 +1,5 @@
 api-client/key.json
 api-client/data.csv
 api-client/__pycache__
+arduino_write
+.vscode
