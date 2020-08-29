@@ -2,6 +2,7 @@ import time
 import requests
 import json
 import csv
+from covidcount import count
 
 with open('key.json') as f:
     key = json.load(f)
@@ -26,7 +27,7 @@ while True:
                 data = response.json()
                 main = data['main']
                 rows = [
-                    [main['temp'], main['humidity'], main['pressure'], data['weather']]
+                    [main['temp'], main['humidity'], main['pressure'], data['weather'], ]
                 ]
                 csvwriter.writerows(rows)
         except ValueError as e:

@@ -1,9 +1,9 @@
 import requests
 
 
-def count():
+def count(country):
     response = requests.get(
-        'https://api.covid19api.com/total/country/united-states')
+        f'https://api.covid19api.com/total/country/{country}')
     data = response.json()
 
     recent = data[-1]
